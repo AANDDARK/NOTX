@@ -1,0 +1,26 @@
+{
+  "name": "notx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rspack/cli": "^1.0.11",
+    "@rspack/core": "^1.0.11",
+    "tsc": "^2.0.4",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "chokidar": "^4.0.1",
+    "swc-loader": "^0.2.6",
+    "tsx": "^4.19.1"
+  }
+}
