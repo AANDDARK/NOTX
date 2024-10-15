@@ -4,6 +4,9 @@
   "description": "",
   "main": "src/index.ts",
   "type": "module",
+  "repository": {"type": "git",
+  "directory": "https://github.com/AANDDARK/NOTX.git"
+},
   "scripts": {
     "dev": "rspack serve",
     "build": "rspack build"
