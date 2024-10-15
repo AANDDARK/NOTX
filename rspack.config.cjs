@@ -1,6 +1,13 @@
 module.exports = {
   resolve: {
     extensions: ['.js', '.ts'], 
+    fallback: {
+      buffer: require.resolve('buffer/'),  
+      os: false,                            
+      path: require.resolve('path-browserify'),
+      stream: require.resolve('stream-browserify'),
+      fs: false
+    }
   },
   module: {
     rules: [
