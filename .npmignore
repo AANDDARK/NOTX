@@ -1,0 +1,8 @@
+ 
+# lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+# file for test
+rspack.config.js
+src/notx.toml

@@ -1,5 +1,5 @@
 // fileWatcher.js
-const chokidar = require('chokidar');
+import chokidar from 'chokidar';
 import { readConfigFile, updateBundlerNameIfChanged, tomlFilePath } from './configSetting';
 
 // Функція для відстеження всіх файлів у директорії

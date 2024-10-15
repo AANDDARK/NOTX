@@ -1,2 +1,5 @@
 [bundler]
 name = "webpack"
+[ignore]
+active-path = "/somepath"
+ignore = [some.js, some.json]

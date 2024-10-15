@@ -1,16 +1,16 @@
-const fs = require('fs');
-const toml = require('@iarna/toml');
+import fs from 'fs';
+import toml from '@iarna/toml';
 
-const tomlFilePath = 'notx.toml';
+export const tomlFilePath = 'notx.toml';
 
-// Функція для читання TOML-файлу
-const readConfigFile = (filePath) => {
+// function for read tonl file
+export const readConfigFile = (filePath) => {
     const tomlData = fs.readFileSync(filePath, 'utf8');
     return toml.parse(tomlData);
 };
 
-// Функція для оновлення імені в секції [bundler], якщо воно змінилося
-const updateBundlerNameIfChanged = (newName) => {
+// function for update name  in toml config [bundler], if it is changed
+export const updateBundlerNameIfChanged = (newName) => {
     const config = readConfigFile(tomlFilePath);
     
     // Перевірка, чи ім'я змінилося
@@ -20,11 +20,11 @@ const updateBundlerNameIfChanged = (newName) => {
         fs.writeFileSync(tomlFilePath, toml.stringify(config), 'utf8');
     }
     
-    // Виводимо нове ім'я
+    // log new name
     console.log(`New name: ${newName}`);
 };
 
-// Експортуємо функції
+// export function
 module.exports = {
     readConfigFile,
     updateBundlerNameIfChanged,

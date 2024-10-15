@@ -20,6 +20,9 @@
   "dependencies": {
     "@iarna/toml": "^2.2.5",
     "chokidar": "^4.0.1",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0",
     "swc-loader": "^0.2.6",
     "tsx": "^4.19.1"
   }
